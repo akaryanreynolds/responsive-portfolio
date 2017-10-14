@@ -3,6 +3,7 @@
 <head>
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
 
     <title>Ryan Reynolds Portfolio</title>
 </head>
@@ -12,11 +13,13 @@
 	<div id="menuwrapper">	
 		<div id="topmenu">
 			<header><strong>Ryan Reynolds</strong></header>
-			
+		
 			<nav>
-				<a href="index.html"><h3>About   |</h3></a>
-				<a href="portfolio.html"><h3>Portfolio    |</h3><a/>
-				<a href="contact.html"><h3>Contact</h3></a>
+				<div>
+					<a href="index.html"><h3>About   |</h3></a>
+					<a href="portfolio.html"><h3>Portfolio    |</h3></a>
+					<a href="contact.html"><h3>Contact</h3></a>
+				</div>
 			</nav>
 		</div>
 	</div>
@@ -28,11 +31,11 @@
 			<article>
 				<form>
 					<h5>Name</h5>
-					<input type="text" name="Name"></input>
+					<input type="text" placeholder="First Name" name="Name"></input>
 					<h5>Email</h5>
-					<input type="text" name="Email"></input>
+					<input type="text" placeholder="email@email.com" name="Email"></input>
 					<h5>Message</h5>
-					<textarea type="text" name="Message"></textarea>
+					<textarea type="text" placeholder="Enter Message here..."name="Message"></textarea>
 				</form>
 				<button><strong>Submit</strong></button>
 			</article>

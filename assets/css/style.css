@@ -77,7 +77,7 @@ section{
 	padding: 30px;
 	border: 1px solid #e4e4e4;
 	background-color: #fff;
-	width: 650px;
+	width: 640px;
 	height: auto;
 	margin-bottom: 25px;
 }
@@ -135,13 +135,19 @@ button{
 	font-size: 15px;
 }
 
-#workexamples{
+.workexamples{
 	position: relative;
-	margin: 15px 40px 5px 0px;
-	z-index: 1;
 }
 
-h4, #h4tl, #h4tr #h4bl, #h4br{
+.worklabels{
+	position: absolute; bottom: 10px;
+}
+
+.worklabes--right{
+	float: right;
+}
+
+h4{
 	position: absolute;
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 	text-align: center;
@@ -150,25 +156,6 @@ h4, #h4tl, #h4tr #h4bl, #h4br{
 	width: 250px;
 	height: 60px;
 	line-height: 60px;
-	z-index: 2;
-	top: 225px;
-}
-
-#h4tr{
-	left: 324px;
-	/*margin: 15px 40px 5px 0px;
-	float: right;*/
-}
-
-#h4bl{
-	top: 450px;
-}
-
-#h4br{
-	top: 450px;
-	left: 324px;
-/*	float: right;
-	margin: 15px 40px 5px 0px;*/
 }
 
 aside {
@@ -177,7 +164,6 @@ aside {
 	border: 1px solid #e4e4e4;
 	background-color: #fff;
 	width: 270px;
-	height: 165px;
 	margin-bottom: 20px;
 }
 
@@ -219,17 +205,17 @@ body {
 	    width: 100%;
 	}
 
-	#main-content{
-
+	#menuwrapper{
+		padding: 0px 30px;
 	}
 	
 	section {
-		width: 55%;
-		margin-left: 20px;
+		max-width: 480px;
+		margin-left:30px;
 	}
 
 	aside{
-		margin-right: 20px;
+		/*margin-right: 20px;*/
 	}
 
 	textarea,
@@ -253,21 +239,30 @@ body {
 	   width: 100%;
 	}
 
+	#menuwrapper{
+		padding: 0px 30px;
+	}
+
 	section {
-		width: 100%;
-		margin-left: 20px;
+		max-width: 85%;
+		margin: 0px 30px;
+		margin-bottom: 30px;
 	}
 
 	aside {
 		float: left;
-		width: 100%;
-		margin-left: 20px;
+		width: 85%;
+		margin-left: 30px;
 	}
 }
 
 @media screen and (max-width: 640px) {
 	body {
 		max-width: 100%;
+	}
+
+	.worklabes--right{
+		float: inherit;
 	}
 
 	.wrapper {
@@ -279,28 +274,38 @@ body {
 	    width: 100%;
 	}
 
+	#menuwrapper{
+		padding: 0px;
+	}
+
 	header{
 		width:100%;
+		float:inherit;
 	}
 
 	nav{
-		float:left;
-		width:100%;
-		align-content: center;
+		float: inherit; 
+	    text-align: center;
+	    width: 100%;
+
 	}
 
 	h3{
-		
+		float:inherit;
+		display: inline-block;
 	}
 
 	section{
-		width: 100%;
-		padding: 20px;
+		width: 85%;
 		margin-top: 30px;
+	}
+
+	#photo {
+		width:100%;
 	}
 
 	aside{
 		float: left;
-		width: 100%;
+		width: 85%;
 	}
 }
